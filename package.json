@@ -1,0 +1,46 @@
+{
+  "name": "@homevote/ai-index",
+  "version": "1.0.0", 
+  "description": "AI-powered code indexing and search system for any codebase using OpenSearch and AWS Bedrock",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "ai-index": "bin/ai-index.js",
+    "ai-query": "bin/ai-query.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/homevote/ai-index.git"
+  },
+  "homepage": "https://github.com/homevote/ai-index#readme",
+  "bugs": {
+    "url": "https://github.com/homevote/ai-index/issues"
+  },
+  "author": "Homevote <dev@homevote.at>",
+  "license": "MIT",
+  "scripts": {
+    "ai:index": "node tools/ai_index/build_index.js",
+    "ai:query": "node tools/ai_index/query.js",
+    "ai:symbols": "bash tools/ai_index/symbol_index.sh",
+    "ai:symbol": "node tools/ai_index/symbol_query.js",
+    "ai:health": "node tools/ai_index/health_check.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.478.0",
+    "@opensearch-project/opensearch": "^2.5.0",
+    "@sourcegraph/scip-typescript": "^0.3.9",
+    "dotenv": "^17.2.1",
+    "fast-glob": "^3.3.2",
+    "globby": "^14.0.0",
+    "strip-json-comments": "^5.0.1"
+  },
+  "keywords": ["ai", "code-search", "indexing", "opensearch", "embedding"],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md"
+  ]
+}

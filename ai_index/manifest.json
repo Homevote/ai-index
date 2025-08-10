@@ -1,0 +1,10 @@
+{
+  "index": "homevote_ai_chunks",
+  "pipeline": "ai-hybrid-rrf",
+  "embed_model": "amazon.titan-embed-text-v2:0",
+  "dim": 512,
+  "last_built_at": "2025-08-10T17:04:12.374Z",
+  "total_chunks": 0,
+  "total_files": 234,
+  "sha": "a78a6a684342c54e60164e88e7af830841860dc6"
+}
