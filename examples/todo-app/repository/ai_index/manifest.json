@@ -1,0 +1,11 @@
+{
+  "mode": "local",
+  "index": "repository",
+  "folder": "/Users/anthonydesmet/Projects/ai-index/examples/todo-app/repository",
+  "embed_model": "Xenova/all-MiniLM-L6-v2",
+  "dim": 384,
+  "last_built_at": "2025-08-11T12:06:17.086Z",
+  "total_chunks": 700,
+  "total_files": 119,
+  "sha": "fae826b45ac45ed5b0d581175e0b573a090282cf"
+}

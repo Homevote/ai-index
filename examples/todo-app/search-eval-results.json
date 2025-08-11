@@ -1,0 +1,636 @@
+{
+  "date": "2025-08-11T12:06:50.227Z",
+  "evals": [
+    {
+      "input": "add a new task form validation",
+      "expectedTop": [
+        "examples/todo-app/repository/src/pages/AddTask.tsx",
+        "examples/todo-app/repository/src/constants/constants.ts",
+        "examples/todo-app/repository/src/utils/generateUUID.ts",
+        "examples/todo-app/repository/src/components/EmojiPicker.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/pages/AddTask.tsx",
+        "examples/todo-app/repository/src/components/tasks/EditTask.tsx",
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/pages/UserProfile.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "task list sorting and filtering",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskSort.tsx",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/utils/syncUtils.ts",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/pages/TaskDetails.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 2,
+        "kReturned": 6
+      }
+    },
+    {
+      "input": "drag-and-drop reordering of tasks",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/utils/syncUtils.ts",
+        "examples/todo-app/repository/src/contexts/TaskContext.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 5
+      }
+    },
+    {
+      "input": "overdue task detection and toast",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/utils/timeUtils.ts",
+        "examples/todo-app/repository/src/utils/showToast.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/utils/showToast.tsx",
+        "examples/todo-app/repository/src/utils/updatePrompt.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/pages/AddTask.tsx",
+        "examples/todo-app/repository/src/pages/Categories.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/App.tsx"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 9
+      }
+    },
+    {
+      "input": "where task selection state lives",
+      "expectedTop": [
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/contexts/TaskContext.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/contexts/TaskContext.tsx",
+        "examples/todo-app/repository/src/pages/AddTask.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 7
+      }
+    },
+    {
+      "input": "render task item UI (name, description, badges)",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/components/tasks/RenderTaskDescription.tsx",
+        "examples/todo-app/repository/src/components/CategoryBadge.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/components/tasks/RenderTaskDescription.tsx",
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/index.ts",
+        "examples/todo-app/repository/src/components/tasks/EditTask.tsx",
+        "examples/todo-app/repository/src/components/TaskIcon.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "share a task via link or QR",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/ShareDialog.tsx",
+        "examples/todo-app/repository/src/pages/Share.tsx",
+        "examples/todo-app/repository/src/components/QRCodeScannerDialog.tsx",
+        "examples/todo-app/repository/src/utils/saveQRCode.ts",
+        "examples/todo-app/repository/src/router.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/components/tasks/ShareDialog.tsx",
+        "examples/todo-app/repository/src/utils/saveQRCode.ts",
+        "examples/todo-app/repository/src/pages/Sync.tsx",
+        "examples/todo-app/repository/README.md",
+        "examples/todo-app/repository/src/components/settings/tabs/GeneralTab.tsx"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 6
+      }
+    },
+    {
+      "input": "add task to Apple Calendar (ICS)",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/ShareDialog.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/tasks/ShareDialog.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/components/tasks/EditTask.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/pages/AddTask.tsx",
+        "examples/todo-app/repository/src/types/user.ts",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskSort.tsx",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "import and export tasks as JSON",
+      "expectedTop": [
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/utils/exportTasks.ts"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/utils/exportTasks.ts",
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/components/ErrorBoundary.tsx",
+        "examples/todo-app/repository/manifest.ts",
+        "examples/todo-app/repository/src/components/index.ts",
+        "examples/todo-app/repository/src/utils/index.ts",
+        "examples/todo-app/repository/src/utils/syncUtils.ts",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/types/github.ts",
+        "examples/todo-app/repository/src/types/sync.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "import tasks from clipboard or dropped file",
+      "expectedTop": [
+        "examples/todo-app/repository/src/pages/Transfer.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/components/tasks/ShareDialog.tsx",
+        "examples/todo-app/repository/src/utils/exportTasks.ts",
+        "examples/todo-app/repository/src/components/settings/tabs/ShortcutsTab.tsx",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/components/index.ts",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 8
+      }
+    },
+    {
+      "input": "peer-to-peer sync between devices (WebRTC/PeerJS)",
+      "expectedTop": [
+        "examples/todo-app/repository/src/hooks/usePeerSync.ts",
+        "examples/todo-app/repository/src/pages/Sync.tsx",
+        "examples/todo-app/repository/src/utils/syncUtils.ts",
+        "examples/todo-app/repository/src/types/sync.ts",
+        "examples/todo-app/repository/src/router.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/pages/Sync.tsx",
+        "examples/todo-app/repository/src/hooks/usePeerSync.ts",
+        "examples/todo-app/repository/src/utils/syncUtils.ts",
+        "examples/todo-app/repository/README.md",
+        "examples/todo-app/repository/src/types/sync.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 3,
+        "expectedInTop5": 4,
+        "kReturned": 5
+      }
+    },
+    {
+      "input": "read task aloud / voice selection",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/ReadAloudTab.tsx",
+        "examples/todo-app/repository/src/components/settings/SettingsDialog.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/ReadAloudTab.tsx",
+        "examples/todo-app/repository/src/types/user.ts",
+        "examples/todo-app/repository/src/components/settings/SettingsDialog.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 2,
+        "expectedInTop5": 3,
+        "kReturned": 5
+      }
+    },
+    {
+      "input": "reduce motion setting",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/settings/tabs/AppearanceTab.tsx",
+        "examples/todo-app/repository/src/styles/reduceMotion.styled.tsx",
+        "examples/todo-app/repository/src/hooks/usePrefersReducedMotion.ts"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/hooks/usePrefersReducedMotion.ts",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/styles/reduceMotion.styled.tsx",
+        "examples/todo-app/repository/src/styles/globalStyles.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/AppearanceTab.tsx",
+        "examples/todo-app/repository/src/components/tasks/tasks.styled.tsx",
+        "examples/todo-app/repository/src/types/emotion.d.ts",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/styles/home.styled.tsx",
+        "examples/todo-app/repository/src/components/EmojiPicker.tsx"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 3,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "theme customization and dark mode",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/settings/tabs/AppearanceTab.tsx",
+        "examples/todo-app/repository/src/theme/createTheme.ts",
+        "examples/todo-app/repository/src/theme/themeConfig.ts",
+        "examples/todo-app/repository/src/contexts/InputThemeProvider.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/theme/createTheme.ts",
+        "examples/todo-app/repository/src/App.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/AppearanceTab.tsx",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/contexts/InputThemeProvider.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/styles/globalStyles.tsx",
+        "examples/todo-app/repository/src/components/settings/ShortcutItem.tsx",
+        "examples/todo-app/repository/src/components/Toaster.tsx",
+        "examples/todo-app/repository/src/components/settings/SettingsDialog.tsx"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 3,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "toggle dark mode with keyboard shortcut",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/AppearanceTab.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/theme/createTheme.ts",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/components/settings/SettingsDialog.tsx",
+        "examples/todo-app/repository/src/App.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/AppearanceTab.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/ShortcutsTab.tsx",
+        "examples/todo-app/repository/src/contexts/InputThemeProvider.tsx",
+        "examples/todo-app/repository/src/utils/colorUtils.ts",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/hooks/useSystemTheme.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 1,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "AI emoji suggestions for task/category name",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/EmojiPicker.tsx",
+        "examples/todo-app/repository/src/types/ai.d.ts"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/EmojiPicker.tsx",
+        "examples/todo-app/repository/src/constants/defaultUser.ts",
+        "examples/todo-app/repository/src/pages/AddTask.tsx",
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/pages/Categories.tsx",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/components/tasks/EditTask.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/EmojiTab.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/pages/TaskDetails.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "switch emoji style (Apple/Google/etc.)",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/settings/tabs/EmojiTab.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/settings/tabs/EmojiTab.tsx",
+        "examples/todo-app/repository/src/components/EmojiPicker.tsx",
+        "examples/todo-app/repository/src/constants/defaultUser.ts",
+        "examples/todo-app/repository/src/components/AnimatedGreeting.tsx",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/ReadAloudTab.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 7
+      }
+    },
+    {
+      "input": "where’s the quick search keyboard shortcut handled",
+      "expectedTop": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/settings/tabs/ShortcutsTab.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/settings/tabs/ShortcutsTab.tsx",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/settings/SettingsDialog.tsx",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/components/EmojiPicker.tsx",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/components/settings/ShortcutItem.tsx",
+        "examples/todo-app/repository/manifest.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "router and lazy-loaded pages",
+      "expectedTop": [
+        "examples/todo-app/repository/src/router.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/router.tsx",
+        "examples/todo-app/repository/src/main.tsx",
+        "examples/todo-app/repository/workbox.config.ts",
+        "examples/todo-app/repository/src/components/ErrorBoundary.tsx",
+        "examples/todo-app/repository/scripts/generateSplashScreens.mjs",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/utils/getSystemInfo.ts",
+        "examples/todo-app/repository/src/utils/updatePrompt.tsx",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/components/settings/SettingsDialog.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "home progress bar and due today summary",
+      "expectedTop": [
+        "examples/todo-app/repository/src/pages/Home.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/settings/tabs/GeneralTab.tsx",
+        "examples/todo-app/repository/src/pages/Home.tsx",
+        "examples/todo-app/repository/src/types/github.ts",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/styles/home.styled.tsx",
+        "examples/todo-app/repository/src/components/tasks/tasks.styled.tsx",
+        "examples/todo-app/repository/manifest.ts",
+        "examples/todo-app/repository/README.md"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "categories management and badges",
+      "expectedTop": [
+        "examples/todo-app/repository/src/pages/Categories.tsx",
+        "examples/todo-app/repository/src/components/CategorySelect.tsx",
+        "examples/todo-app/repository/src/components/CategoryBadge.tsx",
+        "examples/todo-app/repository/src/styles/categories.styled.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/CategorySelect.tsx",
+        "examples/todo-app/repository/src/types/user.ts",
+        "examples/todo-app/repository/src/pages/Categories.tsx",
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/components/CategoryBadge.tsx",
+        "examples/todo-app/repository/src/components/tasks/tasks.styled.tsx",
+        "examples/todo-app/repository/src/App.tsx",
+        "examples/todo-app/repository/src/pages/TaskDetails.tsx"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 1,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "PWA manifest and offline configuration",
+      "expectedTop": [
+        "examples/todo-app/repository/manifest.ts",
+        "examples/todo-app/repository/workbox.config.ts",
+        "examples/todo-app/repository/vite.config.ts",
+        "examples/todo-app/repository/index.html"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/types/launchQueue.d.ts",
+        "examples/todo-app/repository/src/components/settings/tabs/GeneralTab.tsx",
+        "examples/todo-app/repository/manifest.ts",
+        "examples/todo-app/repository/src/pages/Transfer.tsx",
+        "examples/todo-app/repository/vite.config.ts",
+        "examples/todo-app/repository/README.md",
+        "examples/todo-app/repository/src/main.tsx",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/pages/Sync.tsx",
+        "examples/todo-app/repository/workbox.config.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 1,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "update prompt when a new version is available",
+      "expectedTop": [
+        "examples/todo-app/repository/src/utils/updatePrompt.tsx",
+        "examples/todo-app/repository/src/main.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/main.tsx",
+        "examples/todo-app/repository/src/utils/updatePrompt.tsx",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/README.md",
+        "examples/todo-app/repository/src/hooks/useStorageState.ts",
+        "examples/todo-app/repository/src/App.tsx",
+        "examples/todo-app/repository/src/components/ColorPicker.tsx",
+        "examples/todo-app/repository/src/hooks/useSystemTheme.ts",
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/hooks/usePeerSync.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "generate splash screens for iOS/Android",
+      "expectedTop": [
+        "examples/todo-app/repository/scripts/generateSplashScreens.mjs",
+        "examples/todo-app/repository/manifest.ts"
+      ],
+      "returned": [
+        "examples/todo-app/repository/README.md",
+        "examples/todo-app/repository/scripts/generateSplashScreens.mjs",
+        "examples/todo-app/repository/src/components/Sidebar.tsx",
+        "examples/todo-app/repository/src/utils/getSystemInfo.ts",
+        "examples/todo-app/repository/src/utils/profilePictureStorage.ts",
+        "examples/todo-app/repository/workbox.config.ts",
+        "examples/todo-app/repository/manifest.ts"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 1,
+        "expectedInTop5": 1,
+        "kReturned": 7
+      }
+    },
+    {
+      "input": "toast notification styling and reuse",
+      "expectedTop": [
+        "examples/todo-app/repository/src/utils/showToast.tsx",
+        "examples/todo-app/repository/src/components/Toaster.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/utils/showToast.tsx",
+        "examples/todo-app/repository/src/components/Toaster.tsx",
+        "examples/todo-app/repository/src/utils/updatePrompt.tsx",
+        "examples/todo-app/repository/src/components/ColorPicker.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/pages/Categories.tsx",
+        "examples/todo-app/repository/src/components/tasks/tasks.styled.tsx",
+        "examples/todo-app/repository/src/main.tsx",
+        "examples/todo-app/repository/src/App.tsx"
+      ],
+      "metrics": {
+        "top1Match": true,
+        "expectedInTop3": 2,
+        "expectedInTop5": 2,
+        "kReturned": 10
+      }
+    },
+    {
+      "input": "user and task type definitions",
+      "expectedTop": [
+        "examples/todo-app/repository/src/types/user.ts",
+        "examples/todo-app/repository/src/contexts/UserContext.tsx",
+        "examples/todo-app/repository/src/contexts/UserProvider.tsx"
+      ],
+      "returned": [
+        "examples/todo-app/repository/src/contexts/TaskProvider.tsx",
+        "examples/todo-app/repository/src/components/tasks/TasksList.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskItem.tsx",
+        "examples/todo-app/repository/src/pages/Purge.tsx",
+        "examples/todo-app/repository/src/contexts/UserContext.tsx",
+        "examples/todo-app/repository/src/pages/Share.tsx",
+        "examples/todo-app/repository/src/components/tasks/TaskMenu.tsx",
+        "examples/todo-app/repository/src/components/GlobalQuickSaveHandler.tsx",
+        "examples/todo-app/repository/src/types/sync.ts",
+        "examples/todo-app/repository/src/pages/Home.tsx"
+      ],
+      "metrics": {
+        "top1Match": false,
+        "expectedInTop3": 0,
+        "expectedInTop5": 1,
+        "kReturned": 10
+      }
+    }
+  ]
+}
