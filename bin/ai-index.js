@@ -92,7 +92,14 @@ async function checkConfigAndRun(command, args) {
     process.exit(1);
   }
   
-  const scriptPath = path.join(__dirname, `../tools/ai_index/${command}.js`);
+  // Map command names to script names
+  const scriptMap = {
+    'index': 'build_index.js',
+    'query': 'query.js',
+    'health': 'health_check.js'
+  };
+  
+  const scriptPath = path.join(__dirname, `../lib/${scriptMap[command]}`);
   const child = spawn('node', [scriptPath, ...args], {
     stdio: 'inherit',
     cwd: process.cwd()
@@ -140,7 +147,7 @@ async function main() {
       break;
       
     case 'index':
-      await checkConfigAndRun('build_index', commandArgs);
+      await checkConfigAndRun('index', commandArgs);
       break;
       
     case 'query':
@@ -148,7 +155,7 @@ async function main() {
       break;
       
     case 'health':
-      await checkConfigAndRun('health_check', commandArgs);
+      await checkConfigAndRun('health', commandArgs);
       break;
       
     default:
