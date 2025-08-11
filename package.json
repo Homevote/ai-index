@@ -1,6 +1,6 @@
 {
   "name": "ai-index",
-  "version": "3.0.0", 
+  "version": "3.1.0", 
   "description": "AI-powered local code indexing and search system for any codebase",
   "type": "module",
   "main": "lib/index.js",
@@ -18,11 +18,7 @@
   "author": "Homevote <dev@homevote.at>",
   "license": "MIT",
   "scripts": {
-    "ai:index": "node tools/ai_index/build_index.js",
-    "ai:query": "node tools/ai_index/query.js",
-    "ai:symbols": "bash tools/ai_index/symbol_index.sh",
-    "ai:symbol": "node tools/ai_index/symbol_query.js",
-    "ai:health": "node tools/ai_index/health_check.js"
+    "test": "echo 'No tests defined' && exit 0"
   },
   "dependencies": {
     "@sourcegraph/scip-typescript": "^0.3.9",

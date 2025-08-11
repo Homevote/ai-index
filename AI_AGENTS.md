@@ -1,0 +1,3 @@
+# AI Agent Usage
+
+First run `ai-index index` to create a searchable index of the codebase. Then use `ai-index query --q "search terms"` to find relevant code using natural language queries. Be specific in your search terms (e.g., "React component validation" rather than just "validation") and use `--area backend|frontend|docs|infra` to filter by code area. Use `--k N` to limit results. The tool returns file paths and relevant code snippets to help you navigate directly to the code you need.
