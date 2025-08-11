@@ -8,21 +8,20 @@ import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
 import { execSync } from 'child_process';
-import * as dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
+import { loadConfig } from '../../lib/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables
-dotenv.config({ path: path.join(__dirname, '../../.env') });
-
-const AWS_REGION = process.env.AWS_REGION || 'us-east-1';
-const OPENSEARCH_URL = process.env.OPENSEARCH_URL;
-const OPENSEARCH_INDEX = process.env.OPENSEARCH_INDEX || 'homevote_ai_chunks';
-const OPENSEARCH_PIPELINE = process.env.OPENSEARCH_PIPELINE || 'ai-hybrid-rrf';
-const BEDROCK_MODEL_ID = process.env.BEDROCK_MODEL_ID || 'amazon.titan-embed-text-v2:0';
-const EMBED_DIM = parseInt(process.env.EMBED_DIM || '512');
+// Load configuration (global config takes precedence over env vars)
+const config = await loadConfig();
+const AWS_REGION = process.env.AWS_REGION || config.AWS_REGION || 'us-east-1';
+const OPENSEARCH_URL = process.env.OPENSEARCH_URL || config.OPENSEARCH_URL;
+const OPENSEARCH_INDEX = process.env.OPENSEARCH_INDEX || config.OPENSEARCH_INDEX || 'homevote_ai_chunks';
+const OPENSEARCH_PIPELINE = process.env.OPENSEARCH_PIPELINE || config.OPENSEARCH_PIPELINE || 'ai-hybrid-rrf';
+const BEDROCK_MODEL_ID = process.env.BEDROCK_MODEL_ID || config.BEDROCK_MODEL_ID || 'amazon.titan-embed-text-v2:0';
+const EMBED_DIM = parseInt(process.env.EMBED_DIM || config.EMBED_DIM || '512');
 const REPO_ROOT = path.resolve('../');
 
 const osClient = new Client({

@@ -1,20 +1,19 @@
 {
-  "name": "@homevote/ai-index",
+  "name": "ai-index",
   "version": "1.0.0", 
   "description": "AI-powered code indexing and search system for any codebase using OpenSearch and AWS Bedrock",
   "type": "module",
   "main": "lib/index.js",
   "bin": {
-    "ai-index": "bin/ai-index.js",
-    "ai-query": "bin/ai-query.js"
+    "ai-index": "bin/ai-index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/homevote/ai-index.git"
+    "url": "https://github.com/Homevote/ai-index.git"
   },
-  "homepage": "https://github.com/homevote/ai-index#readme",
+  "homepage": "https://github.com/Homevote/ai-index#readme",
   "bugs": {
-    "url": "https://github.com/homevote/ai-index/issues"
+    "url": "https://github.com/Homevote/ai-index/issues"
   },
   "author": "Homevote <dev@homevote.at>",
   "license": "MIT",

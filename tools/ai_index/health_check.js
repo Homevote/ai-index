@@ -2,21 +2,24 @@
 
 import { Client } from '@opensearch-project/opensearch';
 import { AwsSigv4Signer } from '@opensearch-project/opensearch/aws';
-import * as dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { loadConfig } from '../../lib/config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-dotenv.config({ path: path.join(__dirname, '../../.env') });
+// Load configuration (global config takes precedence over env vars)
+const config = await loadConfig();
+const AWS_REGION = process.env.AWS_REGION || config.AWS_REGION || 'us-east-1';
+const OPENSEARCH_URL = process.env.OPENSEARCH_URL || config.OPENSEARCH_URL;
 
 const client = new Client({
   ...AwsSigv4Signer({
-    region: process.env.AWS_REGION,
+    region: AWS_REGION,
     service: 'es',
   }),
-  node: process.env.OPENSEARCH_URL,
+  node: OPENSEARCH_URL,
 });
 
 async function healthCheck() {
