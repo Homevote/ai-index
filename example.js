@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Example usage of @homevote/ai-index as a library
+ * Example usage of @homevote/ai-index as a library - updated for testing
  */
 
 import { CodeSearcher } from '@homevote/ai-index'

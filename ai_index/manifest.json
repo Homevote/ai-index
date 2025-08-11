@@ -1,10 +1,13 @@
 {
-  "index": "homevote_ai_chunks",
-  "pipeline": "ai-hybrid-rrf",
-  "embed_model": "amazon.titan-embed-text-v2:0",
-  "dim": 512,
-  "last_built_at": "2025-08-10T17:04:12.374Z",
-  "total_chunks": 0,
-  "total_files": 234,
-  "sha": "a78a6a684342c54e60164e88e7af830841860dc6"
+  "mode": "local",
+  "index": "ai-index",
+  "folder": "/Users/anthonydesmet/Projects/ai-index",
+  "embed_model": "Xenova/all-MiniLM-L6-v2",
+  "dim": 384,
+  "last_built_at": "2025-08-11T10:46:46.165Z",
+  "total_chunks": 5,
+  "total_files": 27,
+  "processed_files": 3,
+  "skipped_files": 24,
+  "sha": "960e56ea89af52474eb8a769d0232a5e4f70ed4a"
 }
